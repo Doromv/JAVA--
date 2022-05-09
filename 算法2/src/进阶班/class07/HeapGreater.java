@@ -54,9 +54,9 @@ public class HeapGreater <T>{
     }
 
     public void remove(T obj) {
-        T replace=heap.get(heapSize-1);
         int index=indexMap.get(obj);
         indexMap.remove(obj);
+        T replace=heap.get(heapSize-1);
         heap.remove(--heapSize);
         if(obj!=replace){
             heap.set(index,replace);
