@@ -60,7 +60,7 @@ public class LinkedListMid {
     //奇数-返回中间节点的前一个节点
     //偶数-返回中间两个节点当中偏下的节点的前一个节点
     public static Node midOrDownMidPreNode(Node head) {
-        if(head==null||head.next.next==null){
+        if(head==null||head.next==null){
             return null;
         }
         if (head.next.next==null) {
